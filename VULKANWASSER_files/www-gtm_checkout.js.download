@@ -1,0 +1,35 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+var activitiesGTMCheckout=function(){var e=function(e){var t=[];for(var o=0 in e){var n={id:e[o].id,name:e[o].name,price:e[o].price};e[o].storeId&&(n.storeId=e[o].storeId),e[o].storeName&&(n.storeName=e[o].storeName),e[o].brand&&(n.brand=e[o].brand),e[o].category&&(n.category=e[o].category),e[o].checkoutVersion&&(n.checkoutVersion=e[o].checkoutVersion),e[o].list&&(n.list=e[o].list),e[o].purchase_options&&(n.variant=e[o].purchase_options),e[o].quantity&&(n.quantity=e[o].quantity),e[o].dimension10&&(n.dimension10=e[o].dimension10),e[o].dimension11&&(n.dimension11=e[o].dimension11),e[o].dimension12&&(n.dimension12=e[o].dimension12),e[o].dimension13&&(n.dimension13=e[o].dimension13),e[o].dimension14&&(n.dimension14=e[o].dimension14),e[o].dimension15&&(n.dimension15=e[o].dimension15),n.variant="CH",t.push(n)}return t};return{addProductShoppingCart:function(e,t){var o,n={id:e.id,name:e.name||e.name_alt,price:e.price.toString(),brand:e.storeName,storeId:e.storeId,storeName:e.storeName,quantity:1};e.variant&&(n.variant=e.variant),e.categories&&e.categories==Array&&(n.category=e.categories[0].name),"0"!=e.discount&&e.discount&&(n.coupon=e.discount+"offcoupon"),t&&(o=$(t),n.quantity=o.data("quantity")),dataLayer.push({event:"addToCart",ecommerce:{currencyCode:e.currencyCode||"MXN",add:{products:[n]}}})},removeProductShoppingCart:function(e){var t=[];e={id:e.id,name:e.name,price:e.price,brand:e.storeName,storeId:e.storeId,storeName:e.storeName,quantity:e.quantity};t.push(e),dataLayer.push({event:"removeFromCart",ecommerce:{remove:{products:t}}})},stepOneCheckout:function(t,o){o=o||"MXN";var n=e(t);dataLayer.push({event:"checkout",currencyCode:o,ecommerce:{checkout:{actionField:{step:1,option:"Datos de envio, tipo de envio"},products:n}}})},stepTwoCheckout:function(t,o){o=o||"MXN";var n=e(t);dataLayer.push({event:"checkout",currencyCode:o,ecommerce:{checkout:{actionField:{step:2,option:"Forma de pago, datos de contacto, direccion envio"},products:n}}})},purchase:function(t,o,n){n=n||"MXN";var i=e(o),r=[],a=t.revenue?t.revenue.replace("$",""):"0";a=parseFloat(a).toFixed(2).toString();var c=t.shipping?t.shipping.replace("$",""):"0";c=parseFloat(c).toFixed(2).toString();for(var s=0;s<i.length;s++)r.push(i[s].dimension15+"");dataLayer.push({event:"checkoutComplete",currencyCode:n,ecommerce:{purchase:{actionField:{id:t.id,affiliation:t.affiliation,revenue:a,shipping:c,dimension13:r},products:i}}})},onCheckoutOption:function(e,t){dataLayer.push({event:"checkoutOption",ecommerce:{checkout_option:{actionField:{step:e,option:t}}}})},userIdTracking:function(e){dataLayer.push({userId:e,event:"authentication"})},setUserData:function(e){dataLayer.push({event:"setCustomerId",ecommerce:{setCustomerId:e.id}}),dataLayer.push({event:"setEmail",ecommerce:{setEmail:e.email}})},reviewCheckout:function(t,o){o=o||"MXN";var n=e(t);dataLayer.push({event:"reviewCheckout",currencyCode:o,ecommerce:{checkout:{products:n}}})}}}();
+
+}
+/*
+     FILE ARCHIVED ON 15:16:49 Mar 09, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:19:16 Dec 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 92.691
+  exclusion.robots: 0.081
+  exclusion.robots.policy: 0.056
+  cdx.remote: 0.052
+  esindex: 0.009
+  LoadShardBlock: 58.044 (3)
+  PetaboxLoader3.datanode: 783.172 (5)
+  load_resource: 857.816 (2)
+  PetaboxLoader3.resolve: 90.021 (2)
+*/

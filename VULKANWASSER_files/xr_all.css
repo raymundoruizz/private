@@ -1,0 +1,57 @@
+@media screen and (max-width: 879px) {
+.xr_mvp_2 {display: block;}
+.xr_mvp_1 {display: none;}
+.xr_pbd {margin-left: -240px;}
+#xr_xr {width: 480px; height: 5838px}
+}
+@media screen and (min-width: 880px) {
+.xr_mvp_2 {display: none;}
+.xr_mvp_1 {display: block;}
+.xr_pbd {margin-left: -640px;}
+#xr_xr {width: 1280px; height: 6331px}
+}
+@media screen and (max-width: 879px) {
+.xr_mvp_4 {display: block;}
+.xr_mvp_3 {display: none;}
+.xr_pbd {margin-left: -240px;}
+#xr_xr {width: 480px; height: 5618px}
+}
+@media screen and (min-width: 880px) {
+.xr_mvp_4 {display: none;}
+.xr_mvp_3 {display: block;}
+.xr_pbd {margin-left: -640px;}
+#xr_xr {width: 1280px; height: 6332px}
+}
+@media screen and (max-width: 879px) {
+.xr_mvp_6 {display: block;}
+.xr_mvp_5 {display: none;}
+.xr_pbd {margin-left: -240px;}
+#xr_xr {width: 480px; height: 5754px}
+}
+@media screen and (min-width: 880px) {
+.xr_mvp_6 {display: none;}
+.xr_mvp_5 {display: block;}
+.xr_pbd {margin-left: -640px;}
+#xr_xr {width: 1280px; height: 6331px}
+}
+
+/*
+     FILE ARCHIVED ON 19:38:13 May 03, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:19:11 Dec 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 218.922
+  exclusion.robots: 0.139
+  exclusion.robots.policy: 0.123
+  cdx.remote: 0.098
+  esindex: 0.015
+  LoadShardBlock: 35.486 (3)
+  PetaboxLoader3.datanode: 51.813 (4)
+  load_resource: 127.629
+  PetaboxLoader3.resolve: 54.939
+*/
