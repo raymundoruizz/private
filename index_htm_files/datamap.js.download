@@ -1,0 +1,88 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+// this function scans the page for divs containing the class xwidget
+// and triggers the constructor for the widget type
+// the widget type is derived from the id (e.g. imageSlider_001)
+function xaraSwidgets_processPage()
+{
+	$('.xwidget').each(function() {
+
+		// the id of the div on the page
+		var componentID = $(this).attr('id');
+		
+		// the component 'type' - used to trigger the correct component constructor
+		var componentType = componentID.replace(/_\d+$/gi, "");
+	
+		// the component data - accessed using the id
+		var componentData = window['local_' + componentID + '_data'];
+		
+		// do we have any remotely injected data? in which case use that
+		if(window['remote_' + componentID + '_data'])
+		{
+			componentData = window['remote_' + componentID + '_data'];
+		}
+		
+		// this actually calls the constructor for the component based on the component type
+		// this has already been included in the page by the componentID_config.js include
+		
+		window['xaraSwidgets_' + componentType + 'Constructor'](componentID, componentData);
+		
+	});
+}
+
+// this will compile the source code with the properties provided
+function xaraSwidgets_compileTemplate(templateCode, templateVariables)
+{
+	var html = '' + templateCode;
+                	
+	for(var prop in templateVariables)
+	{
+		html = html.replace(RegExp('{' + prop + '}', 'g'), templateVariables[prop]);
+	}
+	            	
+	return html;
+}
+
+function xaraSwidgets_tohtml(str)
+{
+    return $("<p>").text(str).html().replace(RegExp("\n", "g"), "<br/>");
+}
+
+// this is the entry point!
+if(window._xw_preview)
+{
+	$(function(){xaraSwidgets_processPage();});
+}
+
+
+}
+/*
+     FILE ARCHIVED ON 09:12:48 Jun 28, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:19:12 Dec 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 192.619
+  exclusion.robots: 0.065
+  exclusion.robots.policy: 0.056
+  cdx.remote: 0.054
+  esindex: 0.008
+  LoadShardBlock: 164.269 (3)
+  PetaboxLoader3.datanode: 173.689 (4)
+  load_resource: 112.271
+  PetaboxLoader3.resolve: 80.411
+*/

@@ -1,0 +1,35 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+!function(e,t,a,o,i,r){e.hj=e.hj||function(){(e.hj.q=e.hj.q||[]).push(arguments)},e._hjSettings={hjid:220389,hjsv:5},i=t.getElementsByTagName("head")[0],(r=t.createElement("script")).async=1,r.src="//web.archive.org/web/20220309151646/https://static.hotjar.com/c/hotjar-"+e._hjSettings.hjid+".js?sv="+e._hjSettings.hjsv,i.appendChild(r)}(window,document),dataLayer=[];var impressions=[];!function(e,t,a,o,i){e[o]=e[o]||[],e[o].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var r=t.getElementsByTagName(a)[0],c=t.createElement(a);c.async=!0,c.src="https://web.archive.org/web/20220309151646/https://www.googletagmanager.com/gtm.js?id=GTM-NS23MQ",r.parentNode.insertBefore(c,r)}(window,document,"script","dataLayer");var activitiesGTM=function(){var e=function(e){var t=[],a=0;if(e instanceof Array)for(var o=0 in e){a=e[o].price?e[o].price.replace("$",""):"0",a=parseFloat(a).toFixed(2).toString();var i={id:e[o].id,name:e[o].name,price:a,brand:e[o].storeName,storeId:e[o].storeId,storeName:e[o].storeName};e[o].category&&(e[o].category instanceof Array&&e[o].category.length>0?i.category=e[o].cateogry[0].name:i.category=e[o].category),null!=e[o].checkoutVersion&&(i.checkoutVersion=e[o].checkoutVersion),null!=e[o].list&&(i.list=e[o].list),null!=e[o].quantity&&(i.quantity=e[o].quantity),null!=e[o].position&&(i.position=e[o].position),t.push(i)}return t};return{productDetailImpressions:function(e){var t={id:e.item.id,name:e.item.name||e.item.name_alt,price:e.item.price.toString(),brand:e.item.storeName,storeId:e.item.storeId,storeName:e.item.storeName};e.item.variant&&(t.variant=e.item.variant),e.item.categories&&e.item.categories==Array&&(t.category=e.item.categories[0].name),"0"!=e.item.discount&&e.item.discount&&(t.coupon=e.item.discount+"offcoupon"),dataLayer.push({event:"detailReady",ecommerce:{detail:{products:[t]}}})},productClick:function(e){var t,a=void 0,o="";void 0!==e.callback&&(a=e.callback,delete e.callback),void 0!==e.list&&(o=e.list,delete e.list),e.product&&(t=e.product,delete e.product,e=t),dataLayer.push({event:"productClick",ecommerce:{click:{actionField:{list:o,action:"click"},products:[e]}},eventCallback:function(){void 0!==a&&a()}})},productImpressions:function(t){var a=e(t.impressions);dataLayer.push({event:"productsReady",ecommerce:{currencyCode:t.currency||"MXN",impressions:a}})},promotionImpressions:function(e){dataLayer.push({event:"promotionImpression",ecommerce:{promoView:{promotions:e}}})},promotionClick:function(e){dataLayer.push({event:"promotionClick",ecommerce:{promoClick:{promotions:[e]}},eventCallback:function(){void 0!==e.callback&&e.callback()}})},userIdTracking:function(e){dataLayer.push({userId:e,event:"authentication"})},onCheckoutOption:function(e,t){dataLayer.push({event:"checkoutOption",ecommerce:{checkout_option:{actionField:{step:e,option:t}}}})},setDataCart:function(e){dataLayer.push({event:"setCustomerId",ecommerce:{setCustomerId:e.user_id}}),dataLayer.push({event:"setEmail",ecommerce:{setEmail:e.user_email}}),dataLayer.push({event:"cart",ecommerce:{cart:e.cart}}),dataLayer.push({event:"category",ecommerce:{category:e.category}})}}}();
+
+}
+/*
+     FILE ARCHIVED ON 15:16:46 Mar 09, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:19:15 Dec 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 72.491
+  exclusion.robots: 0.076
+  exclusion.robots.policy: 0.067
+  cdx.remote: 0.056
+  esindex: 0.009
+  LoadShardBlock: 41.618 (3)
+  PetaboxLoader3.datanode: 73.414 (5)
+  load_resource: 289.637 (2)
+  PetaboxLoader3.resolve: 155.027 (2)
+*/
